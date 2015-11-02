@@ -5,6 +5,8 @@ package customLinkedList;
  */
 public interface ILinkedList {
 
+    int ELEMENT_NOT_FOUND = -1;
+
     void add(Object object);
 
     void add(Object object, int index);
@@ -13,9 +15,9 @@ public interface ILinkedList {
 
     void remove(int index);
 
-    void get(Object object);
+    int get(Object object);
 
-    void get(int index);
+    Object get(int index);
 
     boolean contains(Object object);
 

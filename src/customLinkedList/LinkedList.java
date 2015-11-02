@@ -11,28 +11,13 @@ public class LinkedList implements ILinkedList {
     //    private customLinkedList.Node node;
     private int size;
 
-
     public LinkedList() {
         this.headNode = new Node(null);
     }
 
     @Override
     public void add(Object object) {
-
-//        customLinkedList.Node node = new customLinkedList.Node(object);
-//
-//        customLinkedList.Node lastNode = this.headNode;
-//
-//        while (lastNode.getNextNode() != null) {
-//            lastNode = lastNode.getNextNode();
-//        }
-//
-//        lastNode.setNextNode(node);
-//
         add(object, this.size);
-
-//        this.size++;
-
     }
 
     @Override
@@ -74,11 +59,41 @@ public class LinkedList implements ILinkedList {
     }
 
     @Override
-    public void get(Object object) {
+    public int get(Object object) {
+
+        Node lastNode = this.headNode;
+        int index = 0;
+
+        while (null != lastNode.getNextNode()) {
+            lastNode = lastNode.getNextNode();
+
+            if (lastNode.getNodeValue().equals(object)) {
+                return index;
+            }
+
+            index++;
+        }
+
+        return ELEMENT_NOT_FOUND;
     }
 
     @Override
-    public void get(int index) {
+    public Object get(int index) {
+
+        Node indexNode = this.headNode;
+        int i = 0;
+        if (index < this.size && index >= 0) {
+
+            while (i <= index) {
+                indexNode = indexNode.getNextNode();
+                i++;
+            }
+
+            return indexNode.getNodeValue();
+        }
+
+
+        return null;
     }
 
     @Override
