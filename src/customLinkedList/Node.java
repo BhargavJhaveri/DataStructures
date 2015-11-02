@@ -1,4 +1,4 @@
-package custom_linked_list;
+package customLinkedList;
 
 /**
  * Created by Bhargav Jhaveri on 02-Nov-15.
