@@ -19,7 +19,7 @@ public class Main {
         linkedList.printLinkedList();
 
         System.out.println("Adding an element");
-        linkedList.add("80", 90);
+        linkedList.add("80", 9);
         System.out.println("Elements added. Now printing begins...  \n");
         linkedList.printLinkedList();
 
