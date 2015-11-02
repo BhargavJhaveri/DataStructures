@@ -1,3 +1,5 @@
+package custom_linked_list;
+
 /**
  * Created by Bhargav Jhaveri on 02-Nov-15.
  */
@@ -6,7 +8,7 @@ public class LinkedList implements ILinkedList {
     // This is the head node which will be referring to the first node of the linked list.
     private Node headNode;
 
-    //    private Node node;
+    //    private custom_linked_list.Node node;
     private int size;
 
 
@@ -17,9 +19,9 @@ public class LinkedList implements ILinkedList {
     @Override
     public void add(Object object) {
 
-//        Node node = new Node(object);
+//        custom_linked_list.Node node = new custom_linked_list.Node(object);
 //
-//        Node lastNode = this.headNode;
+//        custom_linked_list.Node lastNode = this.headNode;
 //
 //        while (lastNode.getNextNode() != null) {
 //            lastNode = lastNode.getNextNode();
