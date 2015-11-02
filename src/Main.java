@@ -9,6 +9,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
+        customLinkedList();
+    }
+
+    private static void customLinkedList() {
         LinkedList linkedList = new LinkedList();
 
         System.out.println("Adding elements begin \n");
@@ -29,6 +33,5 @@ public class Main {
         System.out.println("Printing ends...\n");
 
         System.out.println("Size of linked list is: " + linkedList.size());
-
     }
 }
