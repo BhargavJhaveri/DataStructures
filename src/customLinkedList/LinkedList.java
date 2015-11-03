@@ -52,10 +52,50 @@ public class LinkedList implements ILinkedList {
 
     @Override
     public void remove(Object object) {
+
+        Node lastNode = this.headNode;
+
+        int counter = 0;
+
+        while (null != lastNode.getNextNode()) {
+            Node prevNode = lastNode;
+            lastNode = lastNode.getNextNode();
+            Node nextNode;
+            if (lastNode.getNodeValue().equals(object)) {
+                prevNode.setNextNode(lastNode.getNextNode());
+                counter++;
+                this.size--;
+            }
+        }
+
+        System.out.println("Number of objects which have been removed is: " + counter);
+
     }
 
     @Override
     public void remove(int index) {
+
+        Node lastNode = this.headNode;
+
+        if (this.size >= index && index >= 0) {
+
+            int i = 0;
+            while (null != lastNode.getNextNode()) {
+
+                if (i == index) {
+                    Node prevNode = lastNode;
+                    lastNode = lastNode.getNextNode();
+
+                    prevNode.setNextNode(lastNode.getNextNode());
+                    System.out.println("Object at index: " + index + " was removed!");
+                    break;
+                }
+                i++;
+            }
+        } else {
+            System.out.println("You will burn in hell!!! for removing element at index: " + index);
+        }
+
     }
 
     @Override
@@ -98,7 +138,9 @@ public class LinkedList implements ILinkedList {
 
     @Override
     public boolean contains(Object object) {
-        return false;
+
+        return ELEMENT_NOT_FOUND != get(object);
+
     }
 
     @Override
