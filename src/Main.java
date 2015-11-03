@@ -1,5 +1,6 @@
 import customLinkedList.ILinkedList;
 import customLinkedList.LinkedList;
+import sun.awt.image.ImageWatched;
 
 /**
  * Created by Bhargav Jhaveri on 02-Nov-15.
@@ -37,6 +38,11 @@ public class Main {
 
         getElementIndexTest(linkedList);
         getElementTest(linkedList);
+
+        System.out.println(linkedList.contains("-1"));
+
+        removeObjects(linkedList);
+        removeObjectAtIndex(linkedList);
 
     }
 
@@ -111,6 +117,33 @@ public class Main {
         object = linkedList.get(index);
         System.out.println("Object at " + index + " is " + object);
 
+
+    }
+
+    private static void removeObjects(LinkedList linkedList) {
+
+        linkedList.remove("0");
+        linkedList.remove("25");
+        linkedList.remove("49");
+        linkedList.remove("80");
+
+        linkedList.remove("-10");
+        linkedList.remove("-1");
+        linkedList.remove("81");
+        linkedList.remove("79");
+        linkedList.remove("ASB");
+
+        linkedList.printLinkedList();
+    }
+
+    private static void removeObjectAtIndex(LinkedList linkedList) {
+        linkedList.remove(0);
+        linkedList.remove(1);
+        linkedList.remove(linkedList.size());
+
+        linkedList.remove(48);
+        linkedList.remove(-1);
+        linkedList.remove(80);
 
     }
 
