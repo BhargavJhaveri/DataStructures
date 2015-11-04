@@ -1,5 +1,6 @@
 import customLinkedList.ILinkedList;
 import customLinkedList.LinkedList;
+import operations.SwapElements;
 
 /**
  * Created by Bhargav Jhaveri on 02-Nov-15.
@@ -43,6 +44,16 @@ public class Main {
         removeObjects(linkedList);
         removeObjectAtIndex(linkedList);
 
+        swapElements(linkedList);
+
+
+    }
+
+    private static void swapElements(LinkedList linkedList) {
+        SwapElements swapElements = new SwapElements(linkedList);
+        swapElements.swapElements("4", "48");
+
+        linkedList.printLinkedList();
     }
 
     private static void getElementIndexTest(LinkedList linkedList) {

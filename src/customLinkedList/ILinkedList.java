@@ -23,4 +23,6 @@ public interface ILinkedList {
 
     int size();
 
+    LinkedList reverse();
+
 }

@@ -148,6 +148,20 @@ public class LinkedList implements ILinkedList {
         return size;
     }
 
+    @Override
+    public LinkedList reverse() {
+
+        Node lastNode = this.headNode;
+        Node prevNode = null;
+
+        while (null != lastNode.getNextNode()) {
+            prevNode = lastNode;
+            lastNode = lastNode.getNextNode();
+        }
+
+        return null;
+    }
+
     public void printLinkedList() {
 
         Node lastNode = this.headNode;
@@ -157,5 +171,9 @@ public class LinkedList implements ILinkedList {
 
         }
 
+    }
+
+    public Node getHeadNode() {
+        return this.headNode;
     }
 }
