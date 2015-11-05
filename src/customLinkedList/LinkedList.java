@@ -88,6 +88,7 @@ public class LinkedList implements ILinkedList {
 
                     prevNode.setNextNode(lastNode.getNextNode());
                     System.out.println("Object at index: " + index + " was removed!");
+                    this.size--;
                     break;
                 }
                 i++;
