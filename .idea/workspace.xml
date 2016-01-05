@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7499d284-6cb3-4c4a-8e5e-43f513ba3698" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/customLinkedList/LinkedList.java" afterPath="$PROJECT_DIR$/src/customLinkedList/LinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stack/exec/CustomStack.java" afterPath="$PROJECT_DIR$/src/stack/exec/CustomStack.java" />
     </list>
     <ignored path="LinkedList.iws" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="CustomStack.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/stack/exec/CustomStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6797468">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.70886075">
+              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -761,7 +760,7 @@
       <workItem from="1451939452579" duration="247000" />
       <workItem from="1451944127988" duration="1231000" />
       <workItem from="1452016176394" duration="6935000" />
-      <workItem from="1452025366282" duration="2324000" />
+      <workItem from="1452025366282" duration="2340000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index">
       <created>1446504076309</created>
@@ -853,11 +852,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452027693993</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated Readme file.">
+      <created>1452027753286</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1452027753286</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28044000" />
+    <option name="totallyTimeSpent" value="28060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
@@ -1136,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stack/exec/CustomStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6797468">
-          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.70886075">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
           <folding />
         </state>
       </provider>
