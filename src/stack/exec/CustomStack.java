@@ -57,8 +57,8 @@ public class CustomStack {
         integerStack.pop();
 
         IStack<String> stringStack = new CustomStackList<>();
-        stringStack.push("Bhargav");
-        stringStack.push("Jhaveri");
+        stringStack.push("BhargavStack");
+        stringStack.push("JhaveriList");
 
         stringStack.push("Iron");
         stringStack.push("Man");

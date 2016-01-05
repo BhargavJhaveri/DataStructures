@@ -68,7 +68,7 @@ public class LinkedList implements ILinkedList {
             }
         }
 
-        System.out.println("Number of objects which have been removed is: " + counter);
+//        System.out.println("Number of objects which have been removed is: " + counter);
 
     }
 
