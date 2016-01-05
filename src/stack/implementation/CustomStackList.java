@@ -19,7 +19,12 @@ public class CustomStackList<T> implements IStack<T> {
 
     @Override
     public void push(T element) throws StackOverFlowException {
-        linkedList.add(element);
+        try {
+            linkedList.add(element);
+        }catch (StackOverflowError stackOverflowError) {
+            throw new StackOverFlowException("Stack overflow error");
+        }
+
         System.out.println("Pushed element is:" + element.toString());
     }
 
