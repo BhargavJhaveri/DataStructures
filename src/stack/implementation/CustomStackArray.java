@@ -1,8 +1,8 @@
 package stack.implementation;
 
+import stack.design.IStack;
 import stack.exception.StackOverFlowException;
 import stack.exception.StackUnderFlowException;
-import stack.design.IStack;
 
 /**
  * Created by bhargav on 1/4/16.
@@ -25,7 +25,7 @@ public class CustomStackArray<T> implements IStack<T> {
 
     @Override
     public void push(T element) throws StackOverFlowException {
-        if (stackPointer < stackSize){
+        if (stackPointer < stackSize) {
             stackElements[stackPointer++] = element;
             System.out.println("Pushed element is:" + element.toString());
         } else {

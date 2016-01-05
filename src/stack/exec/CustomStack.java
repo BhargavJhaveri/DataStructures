@@ -35,7 +35,5 @@ public class CustomStack {
 
         stringStack.isEmpty();
 
-//        stringStack.pop();
-
     }
 }
