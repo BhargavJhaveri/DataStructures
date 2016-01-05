@@ -1,4 +1,4 @@
-package stack;
+package stack.exception;
 
 /**
  * Created by bhargav on 1/5/16.

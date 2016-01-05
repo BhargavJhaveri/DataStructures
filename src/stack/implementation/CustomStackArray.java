@@ -1,9 +1,13 @@
-package stack;
+package stack.implementation;
+
+import stack.exception.StackOverFlowException;
+import stack.exception.StackUnderFlowException;
+import stack.design.IStack;
 
 /**
  * Created by bhargav on 1/4/16.
  */
-public class CustomStackArray<T> implements IStack<T>{
+public class CustomStackArray<T> implements IStack<T> {
 
     private T[] stackElements;
     private static final int DEFAULT_CAPACITY = 20;
@@ -31,7 +35,7 @@ public class CustomStackArray<T> implements IStack<T>{
     }
 
     @Override
-    public T pop() throws StackUnderFlowException{
+    public T pop() throws StackUnderFlowException {
         if (stackPointer > 0) {
             T element = stackElements[--stackPointer];
             System.out.println("Popped element is:" + element.toString());
