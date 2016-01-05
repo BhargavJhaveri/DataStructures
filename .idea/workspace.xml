@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7499d284-6cb3-4c4a-8e5e-43f513ba3698" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="LinkedList.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -801,7 +800,7 @@
       <workItem from="1446483863757" duration="17307000" />
       <workItem from="1451939452579" duration="247000" />
       <workItem from="1451944127988" duration="1231000" />
-      <workItem from="1452016176394" duration="6682000" />
+      <workItem from="1452016176394" duration="6696000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index">
       <created>1446504076309</created>
@@ -851,11 +850,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452024809999</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated Readme file.">
+      <created>1452025106606</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1452025106606</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25467000" />
+    <option name="totallyTimeSpent" value="25481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
@@ -905,7 +910,8 @@
     <MESSAGE value="Improved architecture" />
     <MESSAGE value="Modified arch of stack" />
     <MESSAGE value="Removed usused lines." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed usused lines." />
+    <MESSAGE value="Updated Readme file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
