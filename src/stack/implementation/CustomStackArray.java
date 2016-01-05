@@ -11,7 +11,7 @@ public class CustomStackArray<T> implements IStack<T> {
 
     private T[] stackElements;
     private static final int DEFAULT_CAPACITY = 20;
-    private int stackPointer = 0;
+    private int stackPointer = -1;
     int stackSize;
 
     public CustomStackArray(int size) {
@@ -26,7 +26,7 @@ public class CustomStackArray<T> implements IStack<T> {
     @Override
     public void push(T element) throws StackOverFlowException {
         if (stackPointer < stackSize) {
-            stackElements[stackPointer++] = element;
+            stackElements[++stackPointer] = element;
             System.out.println("Pushed element is:" + element.toString());
         } else {
             throw new StackOverFlowException("Element cannot be pushed.");
@@ -36,8 +36,8 @@ public class CustomStackArray<T> implements IStack<T> {
 
     @Override
     public T pop() throws StackUnderFlowException {
-        if (stackPointer > 0) {
-            T element = stackElements[--stackPointer];
+        if (stackPointer >= 0) {
+            T element = stackElements[stackPointer--];
             System.out.println("Popped element is:" + element.toString());
             return element;
         } else {
@@ -48,8 +48,8 @@ public class CustomStackArray<T> implements IStack<T> {
 
     @Override
     public T peek() throws StackUnderFlowException {
-        if (stackPointer > 0) {
-            T element = stackElements[stackPointer - 1];
+        if (stackPointer >= 0) {
+            T element = stackElements[stackPointer];
             System.out.println("Element at the top is:" + element.toString());
             return element;
         } else {
@@ -60,7 +60,7 @@ public class CustomStackArray<T> implements IStack<T> {
     @Override
     public boolean isEmpty() {
 
-        boolean isStackEmpty = stackPointer == 0;
+        boolean isStackEmpty = stackPointer == -1;
         System.out.println("Is stack empty? " + isStackEmpty);
         return (isStackEmpty);
     }
