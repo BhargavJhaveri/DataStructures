@@ -40,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.24731183">
-                <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <first_editor vertical-scroll-proportion="0.40188172">
+                <caret line="13" column="119" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -244,7 +244,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.CustomStack">
@@ -698,7 +698,7 @@
       <workItem from="1451939452579" duration="247000" />
       <workItem from="1451944127988" duration="1231000" />
       <workItem from="1452016176394" duration="6935000" />
-      <workItem from="1452025366282" duration="104000" />
+      <workItem from="1452025366282" duration="438000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index">
       <created>1446504076309</created>
@@ -766,11 +766,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452025496393</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated Readme file.">
+      <created>1452025520974</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1452025520974</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25824000" />
+    <option name="totallyTimeSpent" value="26158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
@@ -1018,8 +1024,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.24731183">
-            <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <first_editor vertical-scroll-proportion="0.40188172">
+            <caret line="13" column="119" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
             <folding />
           </first_editor>
           <second_editor />
