@@ -22,8 +22,8 @@ public class CustomStack {
         stringStack.push("Bhargav");
         stringStack.push("Jhaveri");
 
-        stringStack.push("Maitri");
-        stringStack.push("Jhaveri");
+        stringStack.push("Iron");
+        stringStack.push("Man");
 
         stringStack.isEmpty();
         stringStack.peek();
