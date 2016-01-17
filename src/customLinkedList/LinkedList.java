@@ -25,8 +25,10 @@ public class LinkedList implements ILinkedList {
 
         Node node = new Node(object);
 
+        // TODO: Need to check the condition that index value is more than -1.
         if (index <= this.size) {
 
+            //TODO: Need better name instead of last node.
             Node lastNode = this.headNode;
             int counter = 0;
 
@@ -35,6 +37,7 @@ public class LinkedList implements ILinkedList {
                 counter++;
             }
 
+            // TODO: Need better name for this one also.
             Node nextNode = lastNode.getNextNode();
 
             lastNode.setNextNode(node);
@@ -151,6 +154,11 @@ public class LinkedList implements ILinkedList {
 
     @Override
     public LinkedList reverse() {
+
+        // Traverse till the end of the linked list.
+        // Set the last node - tail node pointer to the previous node.
+        // Continue this process.
+        // Set the head node to initial tail node - as it is the first node now.
 
         Node lastNode = this.headNode;
         Node prevNode = null;

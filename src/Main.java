@@ -1,5 +1,6 @@
 import customLinkedList.ILinkedList;
 import customLinkedList.LinkedList;
+import operations.Operation1;
 import operations.SwapElements;
 
 /**
@@ -11,8 +12,28 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-        customLinkedList();
+//        customLinkedList();
+
+        customOperation1();
+
     }
+
+    private static void customOperation1() {
+        LinkedList linkedList = new LinkedList();
+
+        System.out.println("Adding elements begin \n");
+        for (int i = 1; i < 15; i+=2) {
+            linkedList.add(String.valueOf(i));
+        }
+
+        linkedList.printLinkedList();
+
+        Operation1 operation1 = new Operation1(linkedList);
+        operation1.getReversedLinkedList().printLinkedList();
+        operation1.reverseLinkedListRecursive(linkedList.getHeadNode()).printLinkedList();
+//        linkedList.printLinkedList();
+    }
+
 
     private static void customLinkedList() {
         LinkedList linkedList = new LinkedList();
