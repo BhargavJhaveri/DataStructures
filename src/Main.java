@@ -22,7 +22,7 @@ public class Main {
         LinkedList linkedList = new LinkedList();
 
         System.out.println("Adding elements begin \n");
-        for (int i = 1; i < 15; i+=2) {
+        for (int i = 1; i < 15; i += 2) {
             linkedList.add(String.valueOf(i));
         }
 

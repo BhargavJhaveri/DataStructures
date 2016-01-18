@@ -60,7 +60,7 @@ public class Operation2 {
         int size = 0;
         while (null != nextNode) {
 
-            if (size >= n-1) {
+            if (size >= n - 1) {
                 nthNode = nthNode.getNextNode();
             }
 

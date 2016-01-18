@@ -21,7 +21,7 @@ public class CustomStackList<T> implements IStack<T> {
     public void push(T element) throws StackOverFlowException {
         try {
             linkedList.add(element);
-        }catch (StackOverflowError stackOverflowError) {
+        } catch (StackOverflowError stackOverflowError) {
             throw new StackOverFlowException("Stack overflow error");
         }
 
@@ -45,7 +45,7 @@ public class CustomStackList<T> implements IStack<T> {
     @Override
     public T peek() throws StackUnderFlowException {
         if (linkedList.size() > 0) {
-            T element = (T) linkedList.get(linkedList.size()  - 1);
+            T element = (T) linkedList.get(linkedList.size() - 1);
             System.out.println("Element at the top is:" + element.toString());
             return element;
         } else {
