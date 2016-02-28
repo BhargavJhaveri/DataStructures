@@ -59,4 +59,9 @@ public class CustomStackList<T> implements IStack<T> {
         System.out.println("Is stack empty?" + isStackEmpty);
         return (isStackEmpty);
     }
+
+    @Override
+    public int getSize() {
+        return linkedList.size();
+    }
 }

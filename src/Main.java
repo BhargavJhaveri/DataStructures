@@ -1,6 +1,8 @@
 import customLinkedList.ILinkedList;
 import customLinkedList.LinkedList;
+import customLinkedList.Node;
 import operations.Operation1;
+import operations.Operation2;
 import operations.SwapElements;
 
 /**
@@ -14,7 +16,23 @@ public class Main {
 
 //        customLinkedList();
 
-        customOperation1();
+//        customOperation1();
+        customOperation2();
+    }
+
+    private static void customOperation2() {
+        LinkedList linkedList = new LinkedList();
+
+        Operation2 operation2 = new Operation2(linkedList);
+
+        operation2.sortedInsert(new Node(2));
+        operation2.sortedInsert(new Node(5));
+        operation2.sortedInsert(new Node(4));
+        operation2.sortedInsert(new Node(1));
+        operation2.sortedInsert(new Node(8));
+        operation2.sortedInsert(new Node(3));
+
+        linkedList.printLinkedList();
 
     }
 

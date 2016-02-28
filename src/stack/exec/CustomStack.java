@@ -3,6 +3,7 @@ package stack.exec;
 import stack.design.IStack;
 import stack.implementation.CustomStackArray;
 import stack.implementation.CustomStackList;
+import stack.operation.StackOperations;
 
 /**
  * Created by bhargav on 1/4/16.
@@ -10,13 +11,37 @@ import stack.implementation.CustomStackList;
 public class CustomStack {
 
     public static void main(String[] args) {
-        createStackFromArray();
+//        createStackFromArray();
+//
+//        System.out.println("Now using Linked List");
+//
+//        createStackFromList();
 
-        System.out.println("Now using Linked List");
-
-        createStackFromList();
+        performOperation1();
 
     }
+
+    private static void performOperation1() {
+        StackOperations stackOperations = new StackOperations();
+
+//        String reversed = stackOperations.reverseStringUsingStack("Bhargav Jhaveri");
+//        System.out.println(reversed);
+//
+//        stackOperations.twoStackOperations();
+//        System.out.println("Is it palindrome? " + StackOperations.isStringPalindrome("Bhargav"));
+//        System.out.println("Is it palindrome? " + StackOperations.isStringPalindrome("ABCBA"));
+//
+//        System.out.println("Is expression proper? " + StackOperations.isExpressionProper("[[{{(A+B)}}]]"));
+//        System.out.println("Is expression proper? " + StackOperations.isExpressionProper("[[{{(A-9)}}]]"));
+
+        StackOperations.countNumberOfReversals("{{{{}}}}");
+        StackOperations.countNumberOfReversals("{{{{}}}}}{");
+        StackOperations.countNumberOfReversals("}}{{{{}}}}{{");
+        StackOperations.countNumberOfReversals("{{{{}}}}}");
+        StackOperations.countNumberOfReversals("}}}{{{{{");
+    }
+
+
 
     public static void createStackFromArray() {
         IStack<Integer> integerStack = new CustomStackArray<>();

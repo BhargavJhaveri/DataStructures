@@ -12,6 +12,13 @@ public class CustomStackArray<T> implements IStack<T> {
     private T[] stackElements;
     private static final int DEFAULT_CAPACITY = 20;
     private int stackPointer = -1;
+
+    public int getSize() {
+        return currentStackSize;
+    }
+
+    int currentStackSize;
+
     int stackSize;
 
     public CustomStackArray(int size) {
@@ -27,7 +34,8 @@ public class CustomStackArray<T> implements IStack<T> {
     public void push(T element) throws StackOverFlowException {
         if (stackPointer < stackSize) {
             stackElements[++stackPointer] = element;
-            System.out.println("Pushed element is:" + element.toString());
+            currentStackSize++;
+//            System.out.println("Pushed element is:" + element.toString());
         } else {
             throw new StackOverFlowException("Element cannot be pushed.");
         }
@@ -38,7 +46,9 @@ public class CustomStackArray<T> implements IStack<T> {
     public T pop() throws StackUnderFlowException {
         if (stackPointer >= 0) {
             T element = stackElements[stackPointer--];
-            System.out.println("Popped element is:" + element.toString());
+            stackElements[stackPointer+1] = null;
+            currentStackSize--;
+//            System.out.println("Popped element is:" + element.toString());
             return element;
         } else {
             throw new StackUnderFlowException("Stack is empty. What are you trying to do?");
@@ -50,7 +60,7 @@ public class CustomStackArray<T> implements IStack<T> {
     public T peek() throws StackUnderFlowException {
         if (stackPointer >= 0) {
             T element = stackElements[stackPointer];
-            System.out.println("Element at the top is:" + element.toString());
+//            System.out.println("Element at the top is:" + element.toString());
             return element;
         } else {
             throw new StackUnderFlowException("Stack is empty. What are you trying to do?");
@@ -61,7 +71,7 @@ public class CustomStackArray<T> implements IStack<T> {
     public boolean isEmpty() {
 
         boolean isStackEmpty = stackPointer == -1;
-        System.out.println("Is stack empty? " + isStackEmpty);
+//        System.out.println("Is stack empty? " + isStackEmpty);
         return (isStackEmpty);
     }
 }

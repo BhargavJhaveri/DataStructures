@@ -16,4 +16,6 @@ public interface IStack<T> {
 
     boolean isEmpty();
 
+    int getSize();
+
 }

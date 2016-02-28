@@ -73,5 +73,20 @@ public class Operation2 {
 
     }
 
+    public void sortedInsert(Node node) {
+
+        Node iter = headNode;
+
+        while (null != iter.getNextNode() && ((int) iter.getNextNode().getNodeValue() <= (int) node.getNodeValue())) {
+            iter = iter.getNextNode();
+
+        }
+
+        node.setNextNode(iter.getNextNode());
+        iter.setNextNode(node);
+
+
+    }
+
 
 }
